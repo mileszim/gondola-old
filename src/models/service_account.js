@@ -5,4 +5,8 @@ export default {
   // Associations
   service: ['serviceAccount', 'service'],
   account: ['serviceAccount', 'account']
-}
+};
+
+const serviceAccountHooks = [];
+
+export serviceAccountHooks;

@@ -1,4 +1,4 @@
-export default Post {
+class Post {
   constructor(rawPost) {
     if (!this.isPrototypeOf(Post)) {
       throw new Error('Post: Must be implemented by subclass!');

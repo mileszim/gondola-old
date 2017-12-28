@@ -7,14 +7,27 @@
   "author": "Miles Zimmerman <miles@maztek.io>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist",
+    "start": "dist/index.js"
+  },
+  "engines": {
+    "node": ">= 6.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.5.1",
-    "dotenv": "^4.0.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   },
   "dependencies": {
-    "fortune": "^5.2.3"
+    "fortune": "^5.4.1",
+    "fortune-datastore": "^1.0.1",
+    "fortune-fs": "^1.0.6",
+    "fortune-http": "^1.2.8",
+    "fortune-indexeddb": "^1.0.1",
+    "fortune-json-api": "^2.1.2",
+    "fortune-mongodb": "^1.1.6",
+    "fortune-nedb": "^1.1.7",
+    "fortune-postgres": "^1.6.3",
+    "fortune-redis": "^2.1.0",
+    "dotenv": "^4.0.0"
   }
 }
