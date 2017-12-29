@@ -5,6 +5,4 @@ export default {
   serviceAccounts: [ Array('serviceAccount'), 'serviceAccounts' ]
 }
 
-const keywordHooks = [];
-
-export keywordHooks;
+export let keywordHooks = [];

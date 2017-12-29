@@ -1,7 +1,8 @@
 import EventEmitter from 'events';
 
 export default class Responder extends EventEmitter {
-  constructor() {
+  constructor(...args) {
+    super(...args);
     if (!this.isPrototypeOf(Responder)) {
       throw new Error('Post: Must be implemented by subclass!');
     }

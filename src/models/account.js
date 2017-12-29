@@ -12,7 +12,7 @@ export default {
   serviceAccounts: [ Array('serviceAccount'), 'serviceAccounts' ]
 };
 
-const accountHooks = [
+export let accountHooks = [
   function accountInput(context, record, update) {
     const { request: { method } } = context;
     switch (method) {
@@ -36,5 +36,3 @@ const accountHooks = [
     }
   }
 ];
-
-export accountHooks;

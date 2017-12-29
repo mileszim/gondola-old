@@ -7,6 +7,4 @@ export default {
   account: ['serviceAccount', 'account']
 };
 
-const serviceAccountHooks = [];
-
-export serviceAccountHooks;
+export let serviceAccountHooks = [];

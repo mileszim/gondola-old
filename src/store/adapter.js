@@ -1,20 +1,19 @@
 import ENV from '../config/environment';
 
-if (!ENV.adapter) {
-  export default { adapter: null };
-  return;
-}
-
-
-// Load adapter
-const adapterUrl = ENV.adapter.url;
-import adapterPackage from `fortune-${ENV.adapter.name}`;
+let adapter = { adapter: null };
 
 
 // Set adapter
-export default {
-  adapter: [
-    adapterPackage,
-    { url: adapterURL }
-  ]
+if (ENV.adapter) {
+  const adapterUrl = ENV.adapter.url;
+  const adapterPackage = require(`fortune-${ENV.adapter.name}`);
+
+  adapter = {
+    adapter: [
+      adapterPackage,
+      { url: adapterURL }
+    ]
+  };
 }
+
+export default adapter;

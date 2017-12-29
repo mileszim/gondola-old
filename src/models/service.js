@@ -6,6 +6,4 @@ export default {
   keywords: [ Array('keyword'), 'keywords' ]
 };
 
-const serviceHooks = [];
-
-export serviceHooks;
+export let serviceHooks = [];
